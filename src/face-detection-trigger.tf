@@ -1,5 +1,5 @@
 resource "yandex_function_trigger" "face_detection_function_trigger" {
-  name        = var.face_detection_trigger_name
+  name        = "vvot${var.account_number}-photo"
   object_storage {
     bucket_id    = yandex_storage_bucket.photo.id
     create       = true

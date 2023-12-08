@@ -5,7 +5,7 @@ data "archive_file" "zip" {
 }
 
 resource "yandex_function" "face_detection_function" {
-  name               = var.face_detection_function_name
+  name               = "vvot${var.account_number}-face-detection"
   user_hash          = data.archive_file.zip.output_base64sha256
   runtime            = "python312"  
   entrypoint         = "index.face_detection_handler"   

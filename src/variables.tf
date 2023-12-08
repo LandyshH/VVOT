@@ -26,10 +26,10 @@ variable "photo_database_name" {
   type = string
 }
 
-variable "face_detection_function_name" {
+variable "bot_token" {
   type = string
 }
 
-variable "face_detection_trigger_name" {
+variable "ydb_table" {
   type = string
 }
