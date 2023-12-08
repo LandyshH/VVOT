@@ -22,10 +22,6 @@ variable "queue_uri" {
   type = string
 }
 
-variable "photo_database_name" {
-  type = string
-}
-
 variable "bot_token" {
   type = string
 }

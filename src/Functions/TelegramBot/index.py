@@ -97,7 +97,7 @@ def handler(event, context):
         url=send_message_url,
         params={
           "chat_id": chat_id,
-          "text": "Нет незаписанных фотографий лиц",
+          "text": "Нет доступных фотографий лиц",
           "reply_to_message_id": message_id
         }
       )
